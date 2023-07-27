@@ -210,7 +210,7 @@
     <!-- Fruits name -->
 
     <div class="hidden md:relative md:z-20 md:-mt-24 md:mb-28 md:block">
-      <div class="grid grid-cols-5 items-center justify-between container mx-auto shadow-xl bg-white rounded-xl w-3/5 py-8 px-12">
+      <div class="grid grid-cols-5 items-center justify-between container mx-auto shadow-xl bg-white rounded-xl md:w-10/12 lg:w-3/5 py-8 md:px-8 lg:px-12">
         <div class="flex flex-col jsutify-center items-center">
           <div><img class="mb-3" src="images/fruit1.png" alt="grapes"></div>
           <div><h2 class="text-xl font-[#121212]">Grapes</h2></div>
@@ -237,7 +237,7 @@
 
     <!-- Deal of the day section -->
 
-      <div class="container mx-auto mt-8 md:mt-0 mb-8 hero-content p-0 flex flex-col justify-center items-center md:flex-row-reverse md:justify-between">
+      <div class="md:mx-[45px] lg:container lg:mx-auto mt-8 md:mt-0 mb-8 hero-content p-0 flex flex-col justify-center items-center md:flex-col-reverse md:justify-start md:items-start lg:flex-row-reverse lg:justify-between">
         <!-- Count Down -->
         <div class="grid grid-flow-col gap-2 md:gap-5 text-center md:auto-cols-max">
           <div class="flex flex-col">
@@ -277,7 +277,7 @@
 
       <!-- deal of the day cards -->
     
-        <div class="md:container mx-[15px] md:mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="lg:container mx-[15px] md:mx-[45px] lg:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <!-- card1 -->
           <div class="card px-2 border-2 border-borderColor rounded-lg">
             <figure class="px-0 py-4 md:px-10 md:pt-10">
@@ -401,14 +401,14 @@
 
       <!-- Meet our team -->
     
-        <div class="mx-[15px] md:container md:mx-auto hero md:h-[600px] w-auto mt-8 rounded-lg" style="background-image: url(images/team.png);">
+        <div class="mx-[15px] md:mx-[45px] lg:container lg:mx-auto hero lg:h-[600px] w-auto mt-8 rounded-lg" style="background-image: url(images/team.png);">
           <div class="hero-overlay bg-opacity-80 rounded-lg"></div>
-          <div class="p-0 w-[280px] md:w-[900px] flex flex-col justify-center items-center text-center text-neutral-content">
+          <div class="p-0 w-[280px] md:w-auto pb-8 lg:w-[900px] flex flex-col justify-center items-center text-center text-neutral-content">
             <div class="max-w-4xl">
               <h1 class="mb-5 p-0 pt-8 text-2xl text-center md:text-center md:text-5xl font-bold">Meet the team Section</h1>
               <p class="mb-0 p-0 text-xs w-11/12 mx-auto md:text-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               <!-- Team members -->
-              <div class="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-4 mt-8">
+              <div class="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-3 lg:grid-cols-4 mt-8">
         
                 <!-- Team member 1 -->
                 <div class="flex flex-col justify-center items-center">
@@ -463,7 +463,7 @@
                     </div>
                   </div>
                    <!-- Team member 4 -->
-                   <div class="mb-8 flex flex-col justify-center items-center">
+                   <div class="flex md:hidden lg:flex flex-col justify-center items-center">
                     <div>
                       <img class="w-[140px] h-auto" src="images/member4.png" alt="Awlad Hussain">
                     </div>
@@ -493,7 +493,91 @@
           <h1 class="text-3xl mt-8 md:mt-0 md:text-4xl font-bold text-center">Why Choose us</h1>
           <p class="text-center mt-6 max-w-[600px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 justify-between">
+        <!-- Why choose us tablet -->
+                  <!-- Why choose us image for mobile -->
+            <!-- Image start-->
+            <div class="hidden md:flex md:flex-col md:justify-center md:items-center lg:hidden">
+              <img src="images/whychoose1.png" alt="">
+            </div>
+          <!-- Why choose us mobile image end -->
+        <div class="hidden md:grid md:grid-cols-2 lg:hidden">
+
+            <!-- Why choose us 1 start-->
+            <div class="mt-8  flex flex-col justify-start md:mt-8">
+              <div class="flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row">
+                <div class="w-[60px] h-[60px] bg-borderColor rounded-full flex justify-center items-center mr-3"><img src="images/dedicated.svg" alt=""></div>
+                <div class="max-w-xs">
+                  <h1 class="font-bold text-center md:text-start text-xl" style="line-height: 32px;">Dedicated Team</h1>
+                  <hr class="mx-auto h-px my-2 md:mx-0 bg-gray-200 border-0 dark:bg-gray-700 w-[100px]">
+                  <p class="text-center md:text-start">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Why choose us 2 end -->
+            <!-- Why choose us 1 end -->
+            <!-- Why choose us 2 start-->
+            <div class="mt-8  flex flex-col justify-start md:mt-8">
+              <div class="flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row">
+                <div class="w-[60px] h-[60px] bg-borderColor rounded-full flex justify-center items-center mr-3"><img src="images/fresh.svg" alt=""></div>
+                <div class="max-w-xs">
+                  <h1 class="font-bold text-center md:text-start text-xl" style="line-height: 32px;">Fresh is Best</h1>
+                  <hr class="mx-auto h-px my-2 md:mx-0 bg-gray-200 border-0 dark:bg-gray-700 w-[100px]">
+                  <p class="text-center md:text-start">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Why choose us 2 end -->
+            <!-- Why choose us 3 start-->
+            <div class="mt-8  flex flex-col justify-start md:mt-8">
+              <div class="flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row">
+                <div class="w-[60px] h-[60px] bg-borderColor rounded-full flex justify-center items-center mr-3"><img src="images/gift.svg" alt=""></div>
+                <div class="max-w-xs">
+                  <h1 class="font-bold text-center md:text-start text-xl" style="line-height: 32px;">Gift Certificates</h1>
+                  <hr class="mx-auto h-px my-2 md:mx-0 bg-gray-200 border-0 dark:bg-gray-700 w-[100px]">
+                  <p class="text-center md:text-start">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              </div>
+            <!-- Why choose us 3 end -->
+            <!-- Why choose us 4 start-->
+            <div class="mt-8  flex flex-col justify-start md:mt-8">
+              <div class="flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row">
+                <div class="w-[60px] h-[60px] bg-borderColor rounded-full flex justify-center items-center mr-3"><img src="images/integrated.svg" alt=""></div>
+                <div class="max-w-xs">
+                  <h1 class="font-bold text-center md:text-start text-xl" style="line-height: 32px;">Integrated Supplier</h1>
+                  <hr class="mx-auto h-px my-2 md:mx-0 bg-gray-200 border-0 dark:bg-gray-700 w-[100px]">
+                  <p class="text-center md:text-start">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Why choose us 4 end -->
+            <!-- Why choose us 5 start-->
+            <div class="mt-8  flex flex-col justify-start md:mt-8">
+              <div class="flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row">
+                <div class="w-[60px] h-[60px] bg-borderColor rounded-full flex justify-center items-center mr-3"><img src="images/sustainable.svg" alt=""></div>
+                <div class="max-w-xs">
+                  <h1 class="font-bold text-center md:text-start text-xl" style="line-height: 32px;">Sustainable Practice</h1>
+                  <hr class="mx-auto h-px my-2 md:mx-0 bg-gray-200 border-0 dark:bg-gray-700 w-[100px]">
+                  <p class="text-center md:text-start">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Why choose us 5 end -->
+            <!-- Why choose us 6 start-->
+            <div class="mt-8  flex flex-col justify-start md:mt-8">
+              <div class="flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row">
+                <div class="w-[60px] h-[60px] bg-borderColor rounded-full flex justify-center items-center mr-3"><img src="images/benefits.svg" alt=""></div>
+                <div class="max-w-xs">
+                  <h1 class="font-bold text-center md:text-start text-xl" style="line-height: 32px;">The Benefits Only</h1>
+                  <hr class="mx-auto h-px my-2 md:mx-0 bg-gray-200 border-0 dark:bg-gray-700 w-[100px]">
+                  <p class="text-center md:text-start">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Why choose us 6 end -->
+            </div>
+        <!-- Why choose us tablet end -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 justify-between md:hidden lg:flex">
           <!-- Why choose us image for mobile -->
             <!-- Image start-->
             <div class="flex justify-center items-center md:hidden">
